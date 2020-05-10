@@ -204,7 +204,8 @@ h2 {
   font-weight: 300;
   color: #696A6D;
   text-align: center;
-  margin-bottom: 3%;
+  padding: 2rem auto;
+
 }
 
 .feature-title {
@@ -239,23 +240,89 @@ h3 {
 
 /* ACHIEVEMENTS */
 #achievements {
+
   background-color: #E5E5E5;
 }
 
-.achv-grid {
-  background-color: #E5E5E5;
-  margin: 3% 30%;
+.grid-container {
+  margin: auto 20%;
+  padding: 1em 2em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
 }
 
-.achievement-col {
-  margin-top: 2%;
-  padding: 2% 5%;
-}
+.gd {
+  padding: 2em;
 
-.achievement {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   margin: auto;
   width: 6.5rem;
   height: 90px;
   border-radius: 5%;
   background-color: #fff;
+
+}
+
+p {
+  margin-top: 0;
+}
+
+.achievement-box {}
+
+/* FINAL-SECTION */
+#final-section {
+  padding: 2% 2% 2% 10%;
+  background-color: #fff;
+
+}
+
+.final-box {
+  text-align: center;
+  margin: auto;
+}
+
+.final-box:nth-child(2) p {
+  text-align: center;
+  font-size: .8rem;
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  font-weight: 600;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #404041;
+  padding: 2% 10% 1% 10%;
+}
+
+.up-footer {
+  width: 100%;
+  margin-top: 30px;
+}
+
+h4 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+footer a {
+  font-size: .8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.logo-container {
+  text-align: center;
 }
